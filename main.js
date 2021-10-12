@@ -1,5 +1,5 @@
 let test = async () => {
-  let url = "https://git.heroku.com/deytdl.git/download";
+  let url = "https://deytdl.herokuapp.com/download";
   let data = { URL: "https://www.youtube.com/watch?v=oJiyK0UNx_0" };
   const response = await fetch(url, {
     method: "POST",
