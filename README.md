@@ -1,3 +1,10 @@
-# deytdl_frontend
+```
+npm init -y
+npm i webpack webpack-cli webpack-dev-server
 
-site url ===> https://deyso.github.io/deytdl_frontend/
+npm start
+npm run build
+
+npm version patch
+npm version minor
+```

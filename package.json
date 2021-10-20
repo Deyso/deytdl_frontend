@@ -1,20 +1,19 @@
 {
-  "name": "deytdl_frontend",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Deyso/deytdl_frontend.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Deyso/deytdl_frontend/issues"
-  },
-  "homepage": "https://github.com/Deyso/deytdl_frontend#readme"
+	"name": "aaaa",
+	"version": "1.1.0",
+	"description": "valami nagyon fontos project",
+	"main": "index.js",
+	"scripts": {
+		"start": "webpack-dev-server --mode development --content-base docs --watch-content-base",
+		"build": "webpack --mode production -o docs/main.js",
+		"postversion": "npm run build && git commit -am dist-update && git push && git push --tags"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"webpack": "^4.30.0",
+		"webpack-cli": "^3.3.0",
+		"webpack-dev-server": "^3.3.1"
+	}
 }
