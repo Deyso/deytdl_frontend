@@ -4,7 +4,10 @@ let testBtn = document.querySelector("#test");
 let urlInput = document.querySelector("#url-input");
 
 let test = async () => {
-  window.open(`http://localhost:3000/download?URL=${urlInput.value}`, "_blank");
+  window.open(
+    `https://deytdl.herokuapp.com/download?URL=${urlInput.value}`,
+    "_blank"
+  );
   urlInput.value = "";
 };
 
